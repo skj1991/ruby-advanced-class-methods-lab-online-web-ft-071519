@@ -65,17 +65,4 @@ end
 
 
 
-song = Song.new
 
-importer_results = Importer.new.start  # ["Thundercat - For Love I come.mp3", ]
-
-
-importer_results.each do |filename|
-  Song.new_from_filename(filename)
-end
-
-new_song = Song.new
-
-new_song.name = "My custom song"
-
-new_song.artist_name = "Morgan"
